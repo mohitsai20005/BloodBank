@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+#navbar {
+  background-color: pink;
+  color:black;
+  padding: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Container */
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: 5px;
+}
+
+/* Logo and Title */
+#logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: 2px solid #100f0f;
+}
+
+/* Title Styling */
+#title {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-right: 40px;
+  white-space: nowrap;
+}
+
+#title span:first-child {
+  color: #1e1d1d; /* Red color for "BLOOD" */
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+#title span:last-child {
+  color: #000000; /* Black color for "HUB" */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#eligibilty,
+#compatibilty,
+#bloodfacts {
+  text-align: center;
+  flex: 1;
+  padding: 15px;
+  margin: 15px;
+  background-color: #15b1cc;
+  border-radius: 10px;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#eligibilty:hover,
+#compatibilty:hover,
+#bloodfacts:hover {
+  transform: scale(1.05);
+}
+
+#eligibilty h4,
+#compatibilty h4,
+#bloodfacts h4 {
+  font-size: 18px;
+  color: #f0ebeb;
+}
+#req {
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  background-color: #21cc1b;
+  margin: 0 20px;
+  cursor: pointer;
+  border: 4px solid #aa5409;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 50px;
+}
+
+#req:hover {
+  color: #980002;
+  
+  border-radius: 50px;
+  background-color: #ffe6e6;
+  transform: scale(1.05);
+}
+
+/* Footer */
+#footer {
+  margin-top: 80px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+about-us {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  line-height: 1.2; /* Adjust this value as needed */
+}
+
+.footer-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-heading::after {
+  box-shadow: 0px -3px 5px rgba(72, 204, 11, 0.2);
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #ff4500; /* Change color as needed */
+  margin: 5px auto 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-heading:hover::after {
+  width: 100%;
+}
+
+/* Move copyright text to the left */
+#footer .copyrighttext {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 18px;
+  color: gray;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer .copyrighttext:hover {
+  color: white;
+}
+
+#footer .socialmediaicon {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  display: inline-block;
+}
+
+#footer .socialmediaicon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+  box-shadow:white;
+}
+
+
+
+#header a {
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  background-color: white;
+  margin: 0 20px;
+  cursor: pointer;
+  border: 4px solid #aa5409;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 50px;
+}
+#header a:hover {
+  color: #980002;
+  
+  border-radius: 50px;
+  background-color: #ffe6e6;
+  transform: scale(1.05);
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #nav-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #logo {
+    height: 35px;
+    width: 35px;
+  }
+
+  #title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-right: 0;
+  }
+
+  #navbar {
+    padding: 10px;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .slider-item {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .slider-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px auto;
+  }
+
+  #box {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  #eligibilty, 
+  #compatibilty, 
+  #bloodfacts {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  #req {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-top: 20px;
+  }
+
+  #footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #footer .copyrighttext {
+    font-size: 12px;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  #footer .socialmediaicon {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px;
+  }
+
+  #header a {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-top: 20px;
+  }
+}

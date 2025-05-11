@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #2d3748;
+}
+
+/* Form container */
+.bg-white {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.max-w-md {
+  max-width: 500px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Input and Select Fields */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #3182ce;
+  border-radius: 5px;
+}
+
+/* Error Styling */
+input.error,
+select.error {
+  border-color: #e53e3e;
+}
+
+.text-red-500 {
+  color: #e53e3e;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Button */
+button {
+  background-color: #3182ce;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+button:disabled {
+  background-color: #b2d4fc;
+  cursor: not-allowed;
+}
+
+/* Message */
+p {
+  font-size: 1rem;
+  color: #e53e3e;
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #3182ce;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Spacing */
+.space-y-4 > * + * {
+  margin-top: 16px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Flexbox utility classes */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
